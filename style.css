@@ -1,0 +1,46 @@
+body {
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    margin: 0;
+}
+
+.top_menu_bar {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(45, 45, 45, 0.85); 
+
+    color: #ffffff; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 15px; 
+    box-sizing: border-box;
+}
+
+.menu_left, .menu_right {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    height: 100%;
+}
+
+.top_menu_bar span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    line-height: 1;
+}
+
+.top_menu_bar img {
+    display: block;
+}
+
+.battery_group {
+    gap: 4px;
+}
