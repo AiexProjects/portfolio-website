@@ -44,3 +44,64 @@ body {
 .battery_group {
     gap: 4px;
 }
+
+.dock_bar {
+    width: fit-content;
+    height: 50px;
+    background-color: rgba(45, 45, 45, 0.85);
+    border-radius: 16px;
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%; 
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 0px 10px 4px 10px;
+}
+
+.dock_bar span {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: width 0.15s ease-out, height 0.15s ease-out, margin-bottom 0.15s ease-out;
+    will-change: width, height, margin-bottom;
+    cursor: pointer;
+}
+
+.dock_bar span::after {
+    content: attr(data-title);
+    position: absolute;
+    top: -30px;
+    background-color: rgba(45, 45, 45, 0.75);
+    color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    white-space: nowrap;
+    pointer-events: none;
+    
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.dock_bar span:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dock_bar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    user-select: none;
+    -webkit-user-drag: none;
+}
