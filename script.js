@@ -17,16 +17,15 @@ function updateClock() {
     
     const timeString = `${dayName} ${date} ${monthName} ${hours}:${minutes} ${ampm}`;
     
-    document.getElementById('mac-clock').textContent = timeString;
+    document.getElementById('clock').textContent = timeString;
 }
 
 updateClock();
 setInterval(updateClock, 1000);
 
 
-const dock = document.getElementById('mac-dock');
-const dockIcons = document.querySelectorAll('#mac-dock span');
-
+const dock = document.getElementById('dock');
+const dockIcons = document.querySelectorAll('#dock span');
 const baseSize = 48;
 const maxSize = 68;
 const maxDistance = 150;

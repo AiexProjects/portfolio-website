@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex's Portfolio</title>
-    <link rel="icon" type="image/png" href="icons/title_icon.png">
+    <link rel="icon" type="image/jpg" href="icons/title_icon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="top_menu_bar">
         <div class="menu_left">
             <span><img src="icons/logo.png" alt="Apple Logo" width="12"></span>
-            <span><strong>Finder</strong></span>
+            <span><strong>AlexOS</strong></span>
             <span>File</span>
             <span>Edit</span>
             <span>View</span>
@@ -31,20 +31,41 @@
             </span>
             <span><img src="icons/wifi.png" alt="Wi-Fi" width="16"></span>
             <span><img src="icons/switch.png" alt="Control Center" width="14"></span>
-            <span id="mac-clock">Wed 11 Mar 12:00 AM</span>
+            <span id="clock">Wed 11 Mar 12:00 AM</span>
         </div>
     </nav>
 
-    <nav class="dock_bar" id="mac-dock">
-        <span data-title="🚧Finder🚧"><img src="icons/finder_icon.png" alt="Finder Icon"></span>
+    <div class="desktop_area">
+        
+        <div class="desktop_icon">
+            <img src="icons/IMG_4807.png" alt="Gap Year Folder">
+            <span>Gap Year</span>
+        </div>
+
+        <div class="desktop_icon">
+            <img src="icons/IMG_0107.png" alt="School Stuff Folder">
+            <span>School Stuff</span>
+        </div>
+
+        <div class="desktop_icon">
+            <img src="icons/folder_icon.png" alt="Roblox Projects Folder">
+            <span>Roblox Projects</span>
+        </div>
+
+    </div>
+
+    <nav class="dock_bar" id="dock">
+        <span data-title="🚧Finder🚧" ><img src="icons/finder_icon.png" alt="Finder Icon"></span>
         <span data-title="🚧CV🚧"><img src="icons/notes_icon.png" alt="Notes Icon"></span>
         <span data-title="🚧Photos🚧"><img src="icons/photos_icon.png" alt="Photos Icon"></span>
         <span data-title="Fav Songs"><img src="icons/spotify_icon.png" alt="Spotify Icon"></span>
         <span data-title="Roblox Projects"><img src="icons/roblox_icon.png" alt="Roblox Icon"></span>
-        <span data-title="Github"><img src="icons/github_icon.png" alt="Github Icon"></span>
-        <span data-title="Linked In"><img src="icons/linkedin_icon.png" alt="Linkedin Icon"></span>
-        <span data-title="Instagram"><img src="icons/instagram_icon.png" alt="Instagram Icon"></span>
+        <div class="dock_divider"></div>
+        <span data-title="Github" onclick="window.open('https://github.com/AiexProjects', '_blank')"><img src="icons/github_icon.png" alt="Github Icon"></span>
+        <span data-title="Linked In" onclick="window.open('https://www.linkedin.com/in/alex-lee-571736358/', '_blank')"><img src="icons/linkedin_icon.png" alt="Linkedin Icon"></span>
+        <span data-title="Instagram" onclick="window.open('https://www.instagram.com/aiex.lee/', '_blank')"><img src="icons/instagram_icon.png" alt="Instagram Icon"></span>
         <span data-title="Gmail"><img src="icons/gmail_icon.png" alt="Gmail Icon"></span>
+        <div class="dock_divider"></div>
         <span data-title="🚧Junk🚧"><img src="icons/bin_icon.png" alt="Bin Icon"></span>
     </nav>
     <script src="script.js"></script>
