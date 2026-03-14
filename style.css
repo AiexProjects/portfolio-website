@@ -55,14 +55,14 @@ body {
 .desktop_area {
     position: absolute;
     top: 30px;
-    bottom: 80px;
-    left: 20px;
+    bottom: 40px;
+    left: -10px;
     
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-end;
-    gap: 20px 30px;
+    gap: 10px 20px;
     padding: 20px;
 }
 
@@ -167,4 +167,75 @@ body {
     border-radius: 2px;
     margin: 0 5px;
     margin-bottom: 4px;
+}
+
+
+.mac_window {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.window_top_bar {
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.window_title {
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-weight: 500;
+    padding-right: 45px;
+}
+
+.window_buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.window_buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.close_btn { background-color: #ff5f56; }
+.min_btn { background-color: #ffbd2e; }
+.max_btn { background-color: #27c93f; }
+
+.window_content {
+    padding: 20px;
+    color: white;
+    font-family: -apple-system, sans-serif;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.window_top_bar {
+    cursor: grab;
+}
+
+.window_top_bar:active {
+    cursor: grabbing; /* Closes the hand when they click and hold! */
 }
