@@ -225,7 +225,7 @@ body {
 .max_btn { background-color: #27c93f; }
 
 .window_content {
-    padding: 20px;
+    padding: 10px;
     color: white;
     font-family: -apple-system, sans-serif;
     flex-grow: 1;
@@ -237,5 +237,17 @@ body {
 }
 
 .window_top_bar:active {
-    cursor: grabbing; /* Closes the hand when they click and hold! */
+    cursor: grabbing;
+}
+
+a:link {
+    color: rgb(137, 159, 180);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(137, 159, 180);
+    background-color: transparent;
+    text-decoration: none;
 }
