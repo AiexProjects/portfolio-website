@@ -156,7 +156,7 @@
             <p>
                 A Python based simulation for analyzing and learning the statistical edge in high variance environments, in this case, a game of Blackjack(21)
                 <br><a href="https://github.com/AiexProjects/probabilistic-variance-exploitation-toolkit" target="_blank">[View on Github]</a>
-                <br><a href="placeholder_url" target="_blank">[View Demo]</a>
+                <br><a href="placeholder_url" target="_blank">[🚧View Demo🚧]</a>
             </p>
             <hr>
             <p>
@@ -172,7 +172,7 @@
         
     </div>
 
-    <div class="mac_window" id="MAC_project_window" style="display: none;">
+    <div class="mac_window" id="fitness_tracker_window" style="display: none;">
         
         <div class="window_top_bar">
             <div class="window_buttons">
@@ -180,12 +180,32 @@
                 <span class="min_btn"></span>
                 <span class="max_btn"></span>
             </div>
-            <div class="window_title">MA Calculator</div>
+            <div class="window_title">Fitness Tracker</div>
         </div>
 
         <div class="window_content">
-            <h2>Mechanical Advantage Calculator</h2>
-            <p>cccccccccc</p>
+            <h2>Fitness Tracker</h2>
+            <p>
+                <b>Fitness Tracker - Log sets, reps, machine used, time spent at the gym, music listened to at the gym, 
+                    at the end of the calender year, give a spotify wrapped style summary</b>
+                <br>Tech Stack: Frontend - React Native, Backend: Python, Sqlite3, FastAPI
+            </p>
+            <hr>
+            <p>
+                <br><a href="https://github.com/AiexProjects/fitness_tracker" target="_blank">[View on Github]</a>
+                <br><a href="placeholder_url" target="_blank">[🚧View Demo🚧]</a>
+            </p>
+            <hr>
+            <p>
+                <b>Core Architecture:</b>
+                <br>Uses Core Layers to divide the app into few distinct core functions, for this project, I've been working on the backend, 
+                implementing a central comminication script that handles connecting all the backend scripts and frontend.\
+                <br>Authorisation Service Script - auth_service.py
+                <br>Handles the hashing of user password before being stored in the central database, also uses username and password, gets the stored hashed password and verify that the password matches
+                <br>Databse script - database.py 
+                <br>Handles storing of all data. Seperate Tables within 1 central database, each table holds different info. auth_service_db stored hashed password corresponding to a unique username.
+
+            </p>
         </div>
         
     </div>
